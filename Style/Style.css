@@ -1,0 +1,794 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 100vh;
+    min-height: 400px;
+    background-size: cover;
+    background-image: url("https://img.freepik.com/free-photo/close-up-photographer-hands-using-graphic-tablet-stylus-while-retouching-pictures-photography-studio-artist-doing-retouch-work-with-editing-software-computer-equipment_482257-38106.jpg?w=826&t=st=1665325919~exp=1665326519~hmac=979c2195f0a5b6fba63b3c115aa84e40e530d1169ad82fce5bdd8d787b4c372d");
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-item a:hover {
+    color: #1A237E;
+}
+
+.Hactive {
+    color: #1A237E;
+    border-bottom: 5px solid #1A237E;
+}
+.bgColor {
+    transition: .5s;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid lightgray;
+    font-weight: 700;
+}
+
+.font-color {
+    color: black;
+}
+
+.nav-item {
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.headerInfo {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 53%;
+    padding-top: 180px;
+
+}
+.headerInfo h1,p,span{
+    color: #FFFFFF;
+}
+.headerInfo b{
+    font-size: 62px;
+}
+
+.headerInfo a {
+    border: 1px solid #fff;
+    padding: 10px 10px;
+    border-radius: 40px;
+    background-color: #fff;
+    width: 20%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    color: #1A237E;
+    z-index: 1;
+    margin: auto;
+    cursor: pointer;
+}
+
+.headerInfo a::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #1A237E;
+    border-radius: 40px;
+    transform: translateX(-100%);
+    transition: all .3s linear;
+    z-index: -1;
+}
+
+.headerInfo a:hover:before {
+    transform: translateX(0);
+}
+
+.headerInfo a:hover {
+    color: #FFFFFF !important;
+}
+
+.font-weigth {
+    font-weight: 600;
+    font-size: 65px;
+}
+
+.headerInfo button {
+    padding: 8px 33px;
+    border: none;
+    border-radius: 50px;
+}
+
+.headerInfo button:hover {
+    background-color: #1A237E;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    transition: .5s;
+
+}
+
+.about {
+    padding: 100px 0;
+    background-color: #FFFFFF;
+}
+
+.AboutHeading {
+    color: #1A237E;
+}
+
+.aboutHead {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    color: black;
+}
+
+.aboutHead h3 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.aboutHead h2 {
+    font-size: 30px;
+}
+
+.aboutHead p {
+    color: #8C8A8C;
+}
+.about-Content{
+    display: flex;
+    text-align: center;
+    margin-top: 60px;
+}
+.about-box{
+    padding: 60px 40px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+.about-box-2{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about-box-text p{
+    width: 106%;
+    color: #777777;
+    margin-top: 12px;
+}
+.about-box-text h5{
+    margin-top:12px;
+    font-size: 900;
+}
+.about-box-text span{
+    color: #1A237E;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 600;
+}
+.about-box i{
+    font-size: 50px;
+    border: 1px solid #777777;
+    padding: 16px;
+    border-radius: 50px;
+}
+.about-box:hover i{
+    background-color: #1A237E;
+    color: #FFFFFF;
+    transition: .3s;
+    cursor: pointer;
+}
+.card-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.aboutUs {
+    background: #F9F9F9;
+    padding: 100px 0px;
+}
+.aboutContent .shadow{
+    padding: 50px 20px
+}
+.item img {
+    width: 100%;
+    position: relative;
+}
+
+.item img::before {
+    content: '';
+    position: absolute;
+    background-color: #1A237E;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.iteam-menu ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+}
+
+.about-menu {
+    padding-left: 0;
+}
+
+.about-menu li {
+    padding: 10px 20px;
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
+
+.aboutActive {
+    color: #1A237E;
+    padding: 10px 20px;
+    border-top: 2px solid #1A237E;
+    background-color: white !important;
+}
+
+.progressStyle p {
+    margin-bottom: 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.mission p {
+    color: #999999;
+}
+.aboutL p{
+    color: #999999;
+}
+.aboutL,
+.mission-left,
+.whyUs-left {
+    background-color: #FFFFFF;
+    padding: 40px 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.about-Wrapper {
+    display: flex;
+    /* align-items: center; */
+}
+
+.aboutLeft p {
+    color: #999999;
+}
+
+.about-img {
+    margin-left: -50px;
+}
+
+.about-img img {
+    height: 130%;
+    width: 120%;
+    margin-top: -75px;
+}
+
+.whyIteams {
+    display: flex;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.whyIteam {
+    padding: 20px 35px;
+    background-color: #F9F9F9;
+    color: black;
+}
+
+.whyIteam i {
+    font-size: 31px;
+    margin-bottom: 31px;
+}
+
+.whyIteam2 {
+    padding: 20px 35px;
+    background-color: #dbdbdb;
+    color: black;
+}
+
+.whyIteam2 i {
+    font-size: 31px;
+    margin-bottom: 31px;
+}
+
+.whyIteam:hover {
+    background-color: #1A237E;
+    color: #F9F9F9;
+}
+
+.whyIteam2:hover {
+    background-color: #1A237E;
+    color: #F9F9F9;
+}
+
+.ourProcess{
+    background-image: url('https://img.freepik.com/free-photo/group-young-business-people-working-office_158595-5210.jpg?w=740&t=st=1665332877~exp=1665333477~hmac=f2673d5a481d851d9e550415cf95f69303a96e1cc8e2acc331ff263433a4a85c');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.processWrapper{
+    background-color: #222121b6;
+    padding: 100px 0;
+}
+.process-head {
+    text-align: center;
+    width: 51%;
+    margin: auto;
+    color: #FFF;
+    margin-bottom: 80px;
+}
+.porcess{
+    display: flex;
+    justify-content: space-between;
+}
+.process-content{
+    text-align: center;
+    width: 23%;
+    position: relative;
+}
+.process-content img{
+    position: absolute;
+    transform: rotateX(180deg);
+    width: 70%;
+    right: -40%;
+    top: 15px;
+    opacity: .5;
+}
+.process-down img{
+    transform: rotateX(0);
+}
+.procee-text{
+    background-color: #FFFFFF;
+    padding: 35px 20px;
+    border-radius: 5px;
+}
+.procee-text:hover{
+    background-color: #1A237E;
+    color: #FFFFFF;
+}
+.procee-text:hover p{
+    color: #FFFFFF;
+}
+.process-down{
+    margin-top: 50px;
+}
+.process-content i{
+    font-size: 32px;
+    border: 1px dashed #ffff;
+    padding: 22px 26px;
+    border-radius: 50px;
+    margin-bottom: 35px;
+    color: #2576FD;
+
+}
+.process-content p{
+    color: #777777;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.portfolio {
+    padding: 100px;
+}
+
+.creativePortfolio {
+    text-align: center;
+    width: 51%;
+    margin: auto;
+    color: #111111;
+}
+.creativePortfolio p{
+    color: #777777;
+}
+
+.portfolio-menu {
+    text-align: center;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 75%;
+    border-radius: 40px;
+}
+
+.creativePortfolio-menu {
+    width: 40%;
+    margin: auto;
+    background-color: white;
+}
+
+.portfolio-menu li {
+    list-style: none;
+    padding: 5px 13px;
+    display: inline-block;
+    cursor: pointer;
+    /* margin-right: 10px; */
+    border-radius: 40px;
+    margin: 5px;
+
+}
+
+.portfolio-menu li:hover,
+.portfolio-menu-active {
+    background-color: #1A237E;
+    color: white;
+}
+
+.creative-details {
+    width: 100%;
+}
+
+.creative-details img {
+    width: 100%;
+}
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.serviceImage{
+    width: 48%;
+}
+.service-wraper{
+    width: 48%;
+}
+.service .col {
+    width: 100%;
+}
+
+.service-section {
+    background: #F9F9F9;
+    padding: 100px 0px;
+}
+
+.serviceImage img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.service-Iteam {
+    display: flex;
+    align-items: center
+}
+
+.service-Iteam i {
+    font-size: 40px;
+    border: 1px solid #dbdbdb;
+    border-radius: 50px;
+    padding: 17px;
+    margin-right: 10px;
+    color: #1A237E;
+}
+
+.service-Iteam i:hover {
+    background-color: #1A237E;
+    color: #F9F9F9;
+    transition: 0.5s;
+}
+
+.team {
+    padding: 100px 0;
+    background-color: #FFFFFF;
+}
+.team-people{
+    margin-top: 80px;
+}
+.owl-theme .item {
+    text-align: center;
+}
+
+.owl-theme .item h6 {
+    margin-top: 12px;
+}
+
+.clientSection {
+    padding: 100px 0;
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_960_720.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #5e7fa285;
+
+}
+
+.f-color {
+    color: #F9F9F9;
+}
+
+.card {
+    padding: 20px;
+}
+
+.card img {
+    width: 20%;
+}
+
+.card .cardImage {
+    width: 25%;
+}
+
+.card .quot {
+    width: 25%;
+    margin: auto;
+}
+
+.card .cardImage img {
+
+    border-radius: 50%;
+}
+
+.client-text {
+    /* margin-right: 20px; */
+}
+
+.price-section {
+    padding: 100px 0 50px 0;
+    background-color: #F1F1F1;
+}
+
+.price-head {
+    text-align: center;
+    width: 45%;
+    margin: auto;
+}
+
+.price-head p {
+    font-size: 15px;
+    color: #777777;
+    font-weight: 400;
+}
+
+.price-table {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.price-table .shadow-lg {
+    padding: 50px !important;
+}
+
+.price-details p {
+    font-size: 12px;
+    color: #777777;
+}
+
+.price-table .card3 {
+    background-image: linear-gradient(180deg, #1A2886, #246FF3);
+    color: #FFFFFF;
+}
+
+.price-table .card3 .price-details p {
+    color: #FFFFFF;
+}
+
+.font-weight-bold {
+    font-weight: 900;
+}
+
+.price-date {
+    position: relative;
+}
+
+.doller {
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    left: 15px;
+}
+
+.month-price {
+    font-weight: 700;
+}
+
+.month {
+    font-size: 14px;
+}
+
+.blog{
+    padding: 100px 0;
+    background-color: #F1F1F1;
+}
+.blog-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.blogs{
+    padding: 15px;
+    background-color: #FFFFFF !important;
+    width: 32%;
+}
+.blogs img{
+    width: 100%;
+    transition: all .3s;
+}
+.blogs img:hover{
+    transform: translateY(180deg);
+}
+.blog-text span{
+    font-size: 10px;
+}
+.blog-text p,span{
+    color: #777777;
+}
+.blog-text a{
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #111111;
+}
+.blog-text a:hover{
+    color: #1A237E;
+}
+.contactUs {
+    background-color: #F9F9F9;
+    padding: 100px 0;
+}
+
+.contactLeft {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contactLeft p {
+    margin-bottom: 0;
+}
+
+.contactLeft i {
+    font-size: 40px;
+    margin-right: 20px;
+    color: #1A237E;
+}
+
+.sendEmail a {
+    padding: 10px 40px;
+    color: #FFFFFF;
+    background-color: #1A237E;
+    border: 1px solid #1A237E;
+    width: 101%;
+    position: relative;
+    z-index: 1;
+    transition: all .3s linear;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    ;
+}
+
+
+.sendEmail a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    transform: translateX(-100%);
+    border-radius: 40px;
+    z-index: -1;
+    transition: all .3s linear;
+}
+
+.sendEmail a:hover:before {
+    transform: translateX(0);
+}
+
+.sendEmail a:hover {
+    color: #1A237E;
+
+}
+
+.card3-Button a {
+    padding: 10px 40px;
+    color: #1A237E;
+    background-color: #FFFFFF;
+    border: 1px solid #1A237E;
+    border: 1px solid #FFFFFF;
+    position: relative;
+    width: 101%;
+    z-index: 1;
+    transition: all .3s linear;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    ;
+}
+
+
+.card3-Button a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #1A237E;
+    transform: translateX(-100%);
+    border-radius: 40px;
+    z-index: -1;
+    transition: all .3s linear;
+}
+
+.card3-Button a:hover:before {
+    transform: translateX(0);
+}
+
+.card3-Button a:hover {
+    color: #FFFFFF;
+    transition: all .3s linear;
+
+}
+
+.contact-Head {
+    margin-bottom: 70px;
+}
+
+.getStart {
+    padding: 20px;
+    background-image: url('https://img.freepik.com/free-photo/beautiful-woman-listening-music-outdoors_23-2149015696.jpg?w=740&t=st=1665314955~exp=1665315555~hmac=e5548e6fe7cc00398903550ab706d14967320f8cbbabd939ca11bbcb0c885575');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.getStartWrapper {
+    background-color: rgb(0 0 0 / 45%);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.getStartWrapper .col-2 {
+    margin: auto;
+    width: 13%;
+    margin-top: 42px;
+}
+
+.footer {
+    background-color: #111111;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.footer p {
+    color: #777777;
+    font-size: 12;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.social-container {
+    width: 22%;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.footer ul li {
+    padding: 8px 15px;
+    background-color: #151515;
+    cursor: pointer;
+}
+.footer ul li:hover{
+    background-color: #1A237E;
+}
